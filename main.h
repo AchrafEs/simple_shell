@@ -93,7 +93,7 @@ typedef struct builtin
 } builtin_table;
 
 
-/* ___functions___*/
+/* ____________functions___________*/
 int _putchar(char c);
 int interactive(info_t *info);
 int is_delim(char c, char *delim);
