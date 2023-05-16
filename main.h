@@ -1,5 +1,5 @@
-#ifndef _SHELL_H_
-#define _SHELL_H_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -10,6 +10,13 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <errno.h>
+
+#define WRITE_BUF_SIZE 1024
+#define READ_BUF_SIZE 1024
+#define BUF_FLUSH -1
+
+#define CONVERT_LOWERCASE 1
+#define CONVERT_UNSIGNED 2
 
 /* ___functions___*/
 int _putchar(char c);
@@ -29,5 +36,15 @@ char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 char *_strdup(const char *str);
 void _puts(char *str);
+/* Error_functions */
+int _erratoi(char *);
+void print_error(info_t *, char *);
+char *convert_number(long int, int, int);
+int print_d(int, int);
+void remove_comments(char *);
+void _eputs(char *);
+int _eputchar(char);
+int _putfd(char c, int fd);
+int _putsfd(char *str, int fd);
 
 #endif
