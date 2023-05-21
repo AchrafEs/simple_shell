@@ -130,4 +130,9 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i);
 int _getline(info_t *info, char **ptr, size_t *length);
 void sigintHandler(__attribute__((unused))int sig_num);
 
+/*_____________________exit function_________________*/
+int _myexit(info_t *info);
+/*_____________________cd function__________________*/
+int _mycd(info_t *info);
+
 #endif
