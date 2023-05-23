@@ -153,6 +153,8 @@ int _myexit(info_t *info);
 /*____________________mycd function__________________*/
 int _mycd(info_t *info);
 int _myhelp(info_t *info);
+/*_________________myhistory___________________________*/
+int _myhistory(info_t *info);
 /*________________memory_free__________________*/
 void ffree(char **);
 int bfree(void **);
@@ -197,5 +199,9 @@ void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_vars(info_t *);
+/*_____________________syntax_analyser____________*/
+int is_cmd(info_t *, char *);
+char *dup_chars(char *, int, int);
+char *find_path(info_t *, char *, char *);
 
 #endif
