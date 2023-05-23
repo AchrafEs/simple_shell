@@ -148,9 +148,9 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i);
 int _getline(info_t *info, char **ptr, size_t *length);
 void sigintHandler(__attribute__((unused))int sig_num);
 
-/*_____________________exit function_________________*/
+/*____________________myexit function_________________*/
 int _myexit(info_t *info);
-/*_____________________cd function__________________*/
+/*____________________mycd function__________________*/
 int _mycd(info_t *info);
 int _myhelp(info_t *info);
 /*________________memory_free__________________*/
@@ -191,5 +191,11 @@ int write_history(info_t *info);
 int read_history(info_t *info);
 int build_history_list(info_t *info, char *buf, int linecount);
 int renumber_history(info_t *info);
+/*_______________variables___________________*/
+int is_chain(info_t *, char *, size_t *);
+void check_chain(info_t *, char *, size_t *, size_t, size_t);
+int replace_alias(info_t *);
+int replace_vars(info_t *);
+int replace_vars(info_t *);
 
 #endif
