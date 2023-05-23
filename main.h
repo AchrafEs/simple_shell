@@ -127,6 +127,8 @@ char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 char *_strdup(const char *str);
 void _puts(char *str);
+char **strtow(char *, char *);
+char **strtow2(char *, char);
 
 /*___________Error_functions __________*/
 int _erratoi(char *);
