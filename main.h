@@ -198,7 +198,7 @@ int is_chain(info_t *, char *, size_t *);
 void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
-int replace_vars(info_t *);
+int replace_string(char **old, char *new);
 /*_____________________syntax_analyser____________*/
 int is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
