@@ -29,7 +29,7 @@
 #define USE_STRTOK 0
 
 
-#define HIST_FILE ".simple_shell_history"
+#define HIST_FILE ".shell_history"
 #define HIST_MAX 4096
 
 extern char **environ;
@@ -193,6 +193,11 @@ int write_history(info_t *info);
 int read_history(info_t *info);
 int build_history_list(info_t *info, char *buf, int linecount);
 int renumber_history(info_t *info);
+/*____________________my_alias__________________*/
+int unset_alias(info_t *info, char *str);
+int set_alias(info_t *info, char *str);
+int print_alias(list_t *node);
+int _myalias(info_t *info);
 /*_______________variables___________________*/
 int is_chain(info_t *, char *, size_t *);
 void check_chain(info_t *, char *, size_t *, size_t, size_t);
