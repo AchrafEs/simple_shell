@@ -24,3 +24,6 @@ steps to the project:
 7.  Implement the alias builtin command.
 8.  Handle variables replacement
 9.  Handle comments (#).
+11. Handle history.
+12. Handle Errors.
+13. Manage memory and prevent leaks.
