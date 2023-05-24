@@ -13,3 +13,14 @@ Each shell has its own set of commands, syntax, and features. Shells are an esse
 administrators, developers, and power users who need to perform various tasks on their systems quickly and efficiently.
 
 And in this repo we'll be trying to create our own shell.
+steps to the project:
+1.  Sence we're not allowed to use all the standard libray functions we'll start by writing our own functions.
+2.  We'll make betty proud.
+3.  We tried to handle the path.
+3.  Handle the exit command.
+4.  set and unset environment
+5.  create a gitline function.
+6.  Implement the builtin command cd.
+7.  Implement the alias builtin command.
+8.  Handle variables replacement
+9.  Handle comments (#).
