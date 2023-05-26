@@ -2,7 +2,7 @@
 
 /**
  * loophsh - A loop function
- * @args:
+ * @args: arguments
  *
  * Return: 1 on success
  */
