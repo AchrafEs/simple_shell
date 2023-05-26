@@ -148,9 +148,9 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i);
 int _getline(info_t *info, char **ptr, size_t *length);
 void sigintHandler(__attribute__((unused))int sig_num);
 
-/*____________________myexit function_________________*/
+/*____________________my_exit_________________*/
 int _myexit(info_t *info);
-/*____________________mycd function__________________*/
+/*____________________mycd__________________*/
 int _mycd(info_t *info);
 int _myhelp(info_t *info);
 /*_________________myhistory___________________________*/
